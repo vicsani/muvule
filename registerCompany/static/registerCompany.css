@@ -1,0 +1,51 @@
+#registerCompanyDiv {
+  display: flex;
+}
+
+#registerCompanyDiv [name="companyRegistrationRequirements"] {
+  background-color: rgb(234, 236, 234);
+  display: flex;
+  flex-direction: column;
+  margin-right: 20%;
+  box-shadow: 4px 4px 3px -3px;
+  margin-top: 30px;
+  width: 80%;
+  margin-left: 20%;
+}
+
+#registerCompanyDiv input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  outline: none;
+}
+
+#registerCompanyDiv label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#registerCompanyDiv input,
+#registerCompanyDiv label {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#registerCompanyDiv button {
+  padding: 8px;
+  background: rgb(111, 173, 111);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  font-weight: bold;
+  width: 25%;
+  margin-left: 35%;
+  border-radius: 5px;
+  border: none;
+}
+
+#registerCompanyDiv button:hover {
+  background: #006a4e;
+  color: white;
+}
