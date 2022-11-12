@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register Bailif</title>
-    <link rel="stylesheet" href="./static/createUserAccount.css" />
+    <link rel="stylesheet" href="./static/index.css" />
+    <script src="static/plugin.js"></script>
   </head>
   <body>
     <div id="registerBailifUserDiv">
-      <img src="./images/unloadedProfile.png" alt="profilePicture" />
+      <img name="pic" src="./images/unloadedProfile.png" alt="profilePicture" />
       <div name="registrationRequirementsDiv">
         <div name="generalInformationContainer">
           <h4 class="generalInfoItems">General Information</h4>
@@ -19,7 +20,7 @@
               <input
                 type="text"
                 placeholder="First Name"
-                name="bailiffirstName"
+                name="fname"
               />
             </div>
 
@@ -28,7 +29,7 @@
               <input
                 type="text"
                 placeholder="Last Name"
-                name="bailiflastName"
+                name="lname"
               />
             </div>
           </div>
@@ -37,7 +38,7 @@
           <select name="company" class="generalInfoItems"></select>
 
           <label for="role">Role</label>
-          <select name="BailifRole" class="generalInfoItems"></select>
+          <select name="role" class="generalInfoItems"></select>
         </div>
         <div name="contactInformationContainer">
           <h4 class="contactInfoItems">Contact Information</h4>
@@ -46,7 +47,7 @@
             type="text"
             placeholder="enter contact "
             class="contactInfoItems"
-            name="userPhoneNumber"
+            name="phone1"
           />
 
           <label for="alternativeContact" class="contactInfoItems"
@@ -56,15 +57,14 @@
             type="text"
             placeholder="enter  alternative contact "
             class="contactInfoItems"
-            name="useralternativePhoneNumber"
+            name="phone2"
           />
 
           <label for="password" class="contactInfoItems">Password</label>
           <input
-            type="Password"
             placeholder="enter password "
             class="contactInfoItems"
-            name="userPassword"
+            name="password"
           />
 
           <label for="email" class="contactInfoItems">Email</label>
@@ -72,10 +72,10 @@
             type="email"
             placeholder="enter email "
             class="contactInfoItems"
-            name="userEmail"
+            name="email"
           />
 
-          <button name="submitBailifUserDetails">Add User</button>
+          <button name="postButton">Add User</button>
         </div>
       </div>
     </div>
