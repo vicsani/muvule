@@ -35,6 +35,10 @@
   margin-right: 3px;
 }
 
+#bailifUserAccountDashboard [name="bailifUserAccountHeader"] a {
+  text-decoration: none;
+}
+
 #bailifUserAccountDashboard [name="bailifUserAccountHeader"] a .logoutLink {
   color: white;
   margin-right: 15px;
