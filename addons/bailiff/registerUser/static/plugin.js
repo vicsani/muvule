@@ -3,6 +3,27 @@
 // Id to be used when communicating with parent window
 var ID = 'plugin.registerBailiffUser';
 
+function captureProfilePic(){
+    window.parent.postMessage({sender:`${ID}.caputureImage`, command:'capturePic'}, window.location.origin);
+}
+
+function postData(){
+    let payload = {};
+
+    [...document.querySelectorAll('#registerBailifUserDiv input')].map(function(input){
+        payload[input.getAttribute('name')] = input.value;
+    });
+
+    [...document.querySelectorAll('#registerBailifUserDiv select')].map(function(input){
+        payload[input.getAttribute('name')] = input.value;
+    });
+
+    payload.picB64Data = document.querySelector('#registerBailifUserDiv [name=pic]').b64Data;
+
+    window.parent.postMessage({sender:ID, payload:payload}, window.location.origin);
+
+}
+
 window.onload = function(){
     window.addEventListener('message',function(e){
         if(e.origin!=window.location.origin){
@@ -33,9 +54,16 @@ window.onload = function(){
                     select.appendChild(option);
                 });
 
+            }else if('imgData'==role){
+                let img = document.querySelector('#registerBailifUserDiv [name=pic]');
+                img.src = payload.b64Data;
+                img.b64Data = payload.b64Data;
             }
         }
 
     })
+
+    document.querySelector('#registerBailifUserDiv [name=postButton]').addEventListener('click',postData);
+    document.querySelector('#registerBailifUserDiv [name=pic]').addEventListener('click',captureProfilePic);
 
 }
