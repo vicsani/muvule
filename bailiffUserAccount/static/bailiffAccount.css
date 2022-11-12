@@ -1,0 +1,194 @@
+#bailifUserAccountDashboard [name="bailifUserAccountHeader"] {
+  display: flex;
+  background-color: #094c59;
+  width: 100%;
+  height: 10%;
+  justify-content: space-between;
+}
+
+#bailifUserAccountDashboard [name="bailifUserAccountHeader"] img {
+  margin-left: 15px;
+  margin-top: 28px;
+  margin-right: 15px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+#bailifUserAccountDashboard [name="bailifUserAccountHeader"] h4 {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#bailifUserAccountDashboard [name="bailifUserAccountHeader"] p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 25px;
+  margin-top: 28px;
+}
+
+#bailifUserAccountDashboard [name="bailifUserAccountHeader"] a img {
+  height: 17px;
+  margin-top: 20px;
+  margin-right: 3px;
+}
+
+#bailifUserAccountDashboard [name="bailifUserAccountHeader"] a .logoutLink {
+  color: white;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+#bailifUserAccountDashboard
+  [name="bailifUserAccountHeader"]
+  [name="MuvuleLogo"] {
+  display: flex;
+}
+
+#bailifUserAccountDashboard [name="sidemenuAndClientListSection"] {
+  display: flex;
+  height: 100%;
+}
+
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="bailifUserAccountSideMenu"] {
+  background: #094c59;
+  width: 13%;
+  height: 90%;
+}
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="bailifUserAccountSideMenu"]
+  [name="myClients&icon"],
+[name="performance&icon"],
+[name="cashout&icon"],
+[name="Payment&icon"] {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="bailifUserAccountSideMenu"]
+  img {
+  margin-right: 8px;
+}
+
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="bailifUserAccountSideMenu"]
+  [name="dashboard&icon"] {
+  display: flex;
+  margin-left: 20px;
+  border-bottom: 1px solid #fff;
+  margin-right: 20px;
+}
+
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="bailifUserAccountSideMenu"]
+  a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="bailifUserAccountSideMenu"]
+  p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="clientListSection"] {
+  background: rgb(222, 223, 222);
+  width: 88%;
+  height: 90%;
+}
+
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="clientListSection"]
+  h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="clientListSection"]
+  p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 15px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="clientListSection"]
+  .inputButtonAndParagraphDiv {
+  background: rgb(197, 196, 196);
+  display: flex;
+  justify-content: space-between;
+}
+
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="clientListSection"]
+  [name="overviewIcon"] {
+  display: flex;
+  margin-top: 10px;
+}
+
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="clientListSection"]
+  [name="overviewIcon"]
+  img {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+#bailifUserAccountDashboard [name="searchClientName"] {
+  border-radius: 5px;
+  border: 1px solid #fff;
+  margin-right: 2px;
+  padding: 6px;
+  outline: none;
+  width: 65%;
+  margin-top: 12px;
+  box-shadow: 3px 3px 4px -3px;
+}
+
+#bailifUserAccountDashboard [name="searchClient"] {
+  padding: 6px 15px;
+  border: none;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #094c59;
+  color: #fff;
+}
+
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="clientListSection"]
+  [name="clientListHeading"] {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
