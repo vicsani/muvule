@@ -12,6 +12,7 @@
   width: 90vw;
   margin-left: 5%;
   height: 90vh;
+  padding-bottom: 5px;
 }
 
 #registerCompanyDiv input {
@@ -59,5 +60,8 @@
 
   #registerCompanyDiv [name="companyRegistrationRequirements"] {
     width: 95vw;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 5px;
   }
 }

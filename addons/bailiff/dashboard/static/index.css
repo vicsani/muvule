@@ -196,3 +196,62 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
+
+@media screen and (max-width: 480px) {
+  #bailifUserAccountDashboard
+    [name="sidemenuAndClientListSection"]
+    [name="bailifUserAccountSideMenu"]
+    img {
+    margin-left: -3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #bailifUserAccountDashboard [name="bailifUserAccountHeader"] h4 {
+    font-size: 12px;
+  }
+  #bailifUserAccountDashboard [name="bailifUserAccountHeader"] p {
+    font-size: 10px;
+  }
+
+  #bailifUserAccountDashboard [name="bailifUserAccountHeader"] a .logoutLink {
+    font-size: 12px;
+    margin-right: -5px;
+  }
+
+  #bailifUserAccountDashboard [name="bailifUserAccountHeader"] a img {
+    height: 15px;
+  }
+  #bailifUserAccountDashboard [name="searchClientName"] {
+    width: 45%;
+    padding: 4px;
+  }
+  #bailifUserAccountDashboard [name="searchClient"] {
+    padding: 4px 8px;
+    margin-right: -5px;
+  }
+  #bailifUserAccountDashboard [name="search"] {
+    margin-right: -2px;
+  }
+  #bailifUserAccountDashboard
+    [name="sidemenuAndClientListSection"]
+    [name="bailifUserAccountSideMenu"]
+    a,
+  [name="dashboard&icon"] p {
+    display: none;
+  }
+  #bailifUserAccountDashboard
+    [name="sidemenuAndClientListSection"]
+    [name="bailifUserAccountSideMenu"]
+    [name="dashboard&icon"] {
+    border-bottom: none;
+  }
+
+  #bailifUserAccountDashboard
+    [name="sidemenuAndClientListSection"]
+    [name="clientListSection"]
+    p {
+    margin-left: 10px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
