@@ -11,59 +11,46 @@
   <body>
     <div id="bailifUserAccountDashboard">
       <div name="bailifUserAccountHeader">
-        <div name="MuvuleLogo">
-          <img src="./images/muvule logo.JPG" alt="muvule logo" />
-          <h4>Muvule Financing Ltd</h4>
-        </div>
-        <div name="username&Logout">
-          <p>welcome, UserName</p>
-          <a href="#">
-            <img src="./images/logout-circle-line.svg" alt="logout icon" />
-            <span class="logoutLink">LogOut</span>
-          </a>
+        <div name="welcomeUser">
+          <p>welcome, <span name="name">{Name}</span></p>
         </div>
       </div>
       <div name="sidemenuAndClientListSection">
         <div name="bailifUserAccountSideMenu">
-          <div name="dashboard&icon">
+          <div name="dashboardIcon">
             <img src="./images/dashboard.svg" alt="dasboard icon" />
-            <p>Dashboard</p>
+            <span>Dashboard</span>
           </div>
-
-          <div name="myClients&icon">
+          <hr width="95%" />
+          <div name="myClientsIcon">
             <img src="./images/myClients.svg" alt="clients icon" />
-            <a href="#">My Clients</a>
+            <span><a href="#">My Clients</a></span>
           </div>
-          <div name="performance&icon">
+          <div name="performanceIcon">
             <img src="./images/performance.svg" alt="performance icon" />
-            <a href="#">Performance</a>
+            <span><a href="#">Performance</a></span>
           </div>
-          <div name="cashout&icon">
+          <div name="cashoutIcon">
             <img src="./images/cashout.svg" alt="cashout icon" />
-            <a href="#">Cashout</a>
+            <span><a href="#">Cashout</a></span>
           </div>
-          <div name="Payment&icon">
+          <div name="PaymentIcon">
             <img src="./images/payments.svg" alt="" />
-            <a href="#">Payment</a>
+            <span><a href="#">Payment</a></span>
           </div>
-          <div name="myAccount">
+          <div name="myAccountIcon">
             <img src="./images/account-circle.svg" alt="my account icon" />
-            <a href="#"> My Account </a>
+            <span><a href="#"> My Account </a></span>
+          </div>
+          <hr width="95%" />
+          <div name="logoutIcon">
+            <img src="./images/logout-circle-line.svg" alt="logout icon" />
+            <span class="logoutLink"><a href="#"> LogOut </a></span>
           </div>
         </div>
         <div name="clientListSection">
-          <h3 name="clients">Clients</h3>
-          <div class="inputButtonAndParagraphDiv">
-            <div name="overviewIcon">
-              <img
-                src="./images/overview.svg"
-                alt="overview Icon"
-                height="12px"
-                width="12px"
-              />
-              <p>Overview</p>
-            </div>
-
+          <div class="clientSearch">
+            <h3 name="clients">Clients</h3>
             <div name="search">
               <input
                 type="text"
@@ -73,6 +60,7 @@
               <button name="searchClient">Search</button>
             </div>
           </div>
+
           <hr style="width: 99%" />
           <div name="clientListHeading">
             <p>CLIENT</p>
