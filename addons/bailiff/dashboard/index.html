@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=1"
+    />
+    <title>bailiff dashboard</title>
+    <link rel="stylesheet" href="./static/index.css" />
+    <script src="./static/index.js"></script>
+    <script src="./static/plugin.js"></script>
+  </head>
+  <body>
+    <div id="bailifUserAccountDashboard">
+      <div name="bailifUserAccountHeader">
+        <div name="welcomeUser">
+          <p>welcome, <span name="name">{Name}</span></p>
+        </div>
+      </div>
+      <div name="sidemenuAndClientListSection">
+        <div name="bailifUserAccountSideMenu">
+          <div name="dashboardIcon">
+            <img src="./images/dashboard.svg" alt="dasboard icon" />
+            <span>Dashboard</span>
+          </div>
+          <hr width="95%" />
+
+          <div name="myClientsIcon" class="menu-item active">
+            <img src="./images/myClients.svg" alt="clients icon" />
+            <span><a href="#">My Clients</a></span>
+          </div>
+
+          <div name="performanceIcon" class="menu-item hover">
+            <img src="./images/performance.svg" alt="performance icon" />
+            <span><a href="#">Performance</a></span>
+          </div>
+
+          <div name="cashoutIcon" class="menu-item hover">
+            <img src="./images/cashout.svg" alt="cashout icon" />
+            <span><a href="#">Cashout</a></span>
+          </div>
+
+          <div name="PaymentIcon" class="menu-item hover">
+            <img src="./images/payments.svg" alt="" />
+            <span><a href="#">Payment</a></span>
+          </div>
+
+          <div name="myAccountIcon" class="menu-item hover">
+            <img src="./images/account-circle.svg" alt="my account icon" />
+            <span><a href="#"> My Account </a></span>
+          </div>
+
+          <hr width="95%" />
+          <div name="logoutIcon" class="menu-item hover">
+            <img src="./images/logout-circle-line.svg" alt="logout icon" />
+            <span class="logoutLink"><a href="#"> LogOut </a></span>
+          </div>
+        </div>
+        <div name="clientListSection">
+          <div class="clientSearch">
+            <h3 name="clients">Clients</h3>
+            <div name="search">
+              <input
+                type="text"
+                placeholder="search client"
+                name="searchClientName"
+              />
+              <button name="searchClient">Search</button>
+            </div>
+          </div>
+
+          <hr style="width: 99%" />
+          <div name="clientListHeading" class="row">
+            <p>CLIENT</p>
+            <p>OUTSTANDING BALANCE</p>
+          </div>
+          <hr style="width: 99%" />
+          <div name="clientListResults" class="row">
+            <p class="clickable">{client name}</p>
+            <p>{client outstanding balance}</p>
+          </div>
+
+          <!-- <script>
+            window.onload = function () {
+              for (let i = 0; i < 100; ++i) {
+                document.querySelector("#d").innerHTML += `
+                <div name="clientListHeading" class='${i % 2 ? "" : "odd"}'>
+                  <p class="clickable">DOUGLAS NDYABAHIKA TWESIGYE KACHUMISI</p>
+                  <p>99,999,999</p>
+                </div>
+                `;
+              }
+            };
+          </script> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

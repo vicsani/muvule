@@ -3,6 +3,7 @@
   background: rgb(225, 255, 225);
   margin-left: 10%;
   box-shadow: 3px 3px 4px -4px;
+  padding-bottom: 20px;
 }
 #registerBailifUserDiv img {
   height: 130px;
@@ -115,17 +116,14 @@
   outline: none;
 }
 
-#registerBailifUserDiv [name="bailifFullNames"] {
-  display: flex;
-}
-#registerBailifUserDiv [name="bailifFirsttName"] input {
+/* #registerBailifUserDiv [name="bailifFirsttName"] input {
   width: 159px;
-}
-
+} */
+/* 
 #registerBailifUserDiv [name="bailifLastName"] input {
   width: 159px;
   margin-left: -1px;
-}
+} */
 #registerBailifUserDiv [name="bailifFirsttName"] {
   color: #006a4e;
 }
@@ -148,4 +146,78 @@
 #registerBailifUserDiv [name="generalInformationContainer"] label {
   color: #006a4e;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  #registerBailifUserDiv [name="registrationRequirementsDiv"] {
+    display: flex;
+  }
+  #registerBailifUserDiv [name="generalInformationContainer"] {
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+  }
+  #registerBailifUserDiv [name="contactInformationContainer"] {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  #registerBailifUserDiv {
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 700px) {
+  #registerBailifUserDiv [name="registrationRequirementsDiv"] {
+    display: block;
+  }
+
+  #registerBailifUserDiv [name="generalInformationContainer"] {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+  #registerBailifUserDiv [name="contactInformationContainer"] {
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+  #registerBailifUserDiv {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #registerBailifUserDiv [name="registrationRequirementsDiv"] {
+    display: block;
+  }
+
+  #registerBailifUserDiv [name="generalInformationContainer"] {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+  #registerBailifUserDiv [name="contactInformationContainer"] {
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+
+  #registerBailifUserDiv {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  #registerBailifUserDiv button {
+    width: 45%;
+    margin-left: 25%;
+  }
+  #registerBailifUserDiv img {
+    margin-left: 30%;
+  }
 }
