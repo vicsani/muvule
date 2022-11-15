@@ -67,6 +67,7 @@
 #bailifUserAccountDashboard [name="sidemenuAndClientListSection"] .active {
   background-color: #184b55;
   padding: 2px;
+  padding: 10px;
 }
 
 #bailifUserAccountDashboard
