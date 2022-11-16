@@ -46,60 +46,75 @@
   margin-left: 5px;
 }
 
-#bailifUserAccountDashboard [name="sidemenuAndClientListSection"] img {
-  margin-left: 10px;
-}
-
-#bailifUserAccountDashboard
-  [name="sidemenuAndClientListSection"]
-  [name="dashboardIcon"] {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
 #bailifUserAccountDashboard
   [name="sidemenuAndClientListSection"]
   [name="dashboardIcon"]
   span {
-  margin-left: 5px;
+  padding-left: 25px;
+  margin-top: 10px;
+  display: flex;
+}
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="dashboardIcon"]
+  span
+  img {
+  margin-right: 8px;
+}
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="clickableTabs"] {
+  margin-top: 7px;
 }
 
 #bailifUserAccountDashboard [name="sidemenuAndClientListSection"] .active {
   background-color: #184b55;
-  padding: 2px;
+  margin-top: 2px;
+  padding-top: 10px;
+  padding-left: -5px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 100%;
 }
 
 #bailifUserAccountDashboard
   [name="sidemenuAndClientListSection"]
-  [name="myClientsIcon"] {
-  margin-top: 5px;
+  [name="clickableTabs"]
+  a {
+  padding-left: 25px;
+  display: flex;
 }
 
 #bailifUserAccountDashboard
   [name="sidemenuAndClientListSection"]
-  [name="performanceIcon"],
-[name="cashoutIcon"],
-[name="PaymentIcon"],
-[name="myAccountIcon"] {
-  margin-top: 20px;
+  [name="clickableTabs"]
+  .menu-item {
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="clickableTabs"]
+  .menu-item:nth-child(1) {
+  margin-top: 4px;
 }
 
 #bailifUserAccountDashboard
   [name="sidemenuAndClientListSection"]
-  [name="myAccountIcon"] {
-  margin-bottom: 10px;
-}
-
-#bailifUserAccountDashboard
-  [name="sidemenuAndClientListSection"]
-  [name="logoutIcon"] {
-  margin-top: 10px;
-}
-
-#bailifUserAccountDashboard [name="sidemenuAndClientListSection"] .active {
-  background: #1f271b;
+  [name="clickableTabs"]
+  .menu-item:nth-child(6) {
   margin-top: 2px;
 }
+
+#bailifUserAccountDashboard
+  [name="sidemenuAndClientListSection"]
+  [name="clickableTabs"]
+  .menu-item
+  img {
+  margin-right: 10px;
+}
+
 /* ===========================================Main section========================================= */
 #bailifUserAccountDashboard [name="clientListSection"] {
   background: rgb(211, 210, 210);
@@ -185,14 +200,16 @@
   #bailifUserAccountDashboard
     [name="sidemenuAndClientListSection"]
     [name="dashboardIcon"]
-    span {
+    span
+    p {
     display: none;
   }
-  #bailifUserAccountDashboard [name="sidemenuAndClientListSection"] a {
+
+  #bailifUserAccountDashboard [name="sidemenuAndClientListSection"] a p {
     display: none;
   }
   #bailifUserAccountDashboard [name="sidemenuAndClientListSection"] img {
-    margin-left: 32px;
+    justify-content: center;
     height: 25px;
     margin-bottom: 20px;
   }
@@ -202,16 +219,25 @@
   #bailifUserAccountDashboard
     [name="sidemenuAndClientListSection"]
     [name="dashboardIcon"]
-    span {
+    span
+    p {
     display: none;
   }
-  #bailifUserAccountDashboard [name="sidemenuAndClientListSection"] a {
+  #bailifUserAccountDashboard
+    [name="sidemenuAndClientListSection"]
+    [name="clickableTabs"]
+    p {
     display: none;
   }
-  #bailifUserAccountDashboard [name="sidemenuAndClientListSection"] img {
-    margin-left: 18px;
-    height: 20px;
-    margin-bottom: 20px;
+
+  #bailifUserAccountDashboard
+    [name="sidemenuAndClientListSection"]
+    [name="clickableTabs"]
+    img {
+    justify-content: center;
+    height: 17px;
+    margin-bottom: 14px;
+    margin-left: -11px;
   }
   #bailifUserAccountDashboard
     [name="clientListSection"]
@@ -256,16 +282,37 @@
     [name="searchClientName"] {
     width: 65%;
   }
-
   #bailifUserAccountDashboard
     [name="sidemenuAndClientListSection"]
     [name="dashboardIcon"]
-    span {
+    span
+    p {
     display: none;
   }
-  #bailifUserAccountDashboard [name="sidemenuAndClientListSection"] a {
+  #bailifUserAccountDashboard
+    [name="sidemenuAndClientListSection"]
+    [name="dashboardIcon"]
+    span
+    img {
+    justify-content: center;
+  }
+  #bailifUserAccountDashboard
+    [name="sidemenuAndClientListSection"]
+    [name="clickableTabs"]
+    p {
     display: none;
   }
+
+  #bailifUserAccountDashboard
+    [name="sidemenuAndClientListSection"]
+    [name="clickableTabs"]
+    img {
+    justify-content: center;
+    height: 17px;
+    margin-bottom: 14px;
+    margin-left: -11px;
+  }
+
   #bailifUserAccountDashboard
     [name="clientListSection"]
     [name="clientListHeading"] {
